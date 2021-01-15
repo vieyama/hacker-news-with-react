@@ -1,0 +1,34 @@
+.container {
+    .card-data {
+        background: white;
+        padding: 10px 35px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+
+        @media screen and (max-width: 400px) {
+            padding: 10px 15px;
+        }
+
+        .number {
+            background: #f99601;
+            width: 25px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+
+        .title {
+            margin: 0;
+            &:hover {
+                color: #f99601;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+
+        .subtitle {
+            color: #dabc8f;
+        }
+    }
+}

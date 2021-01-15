@@ -1,0 +1,52 @@
+.header {
+    height: 64px;
+    padding: 0 50px;
+    color: #fff;
+    line-height: 64px;
+    background: #f99601;
+    display: flex;
+
+    @media screen and (max-width: 400px) {
+        padding: 0px 20px;
+    }
+
+    .logo {
+        .avatar {
+            background-color: #fff;
+            color: #f99601;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+    }
+
+    &-menu {
+        align-self: center;
+    }
+
+    .ant-menu.ant-menu-dark,
+    .ant-menu-dark .ant-menu-sub,
+    .ant-menu.ant-menu-dark .ant-menu-sub {
+        color: #fff;
+        background: #f99601;
+        text-align: -webkit-center;
+
+        .ant-menu-item-selected {
+            background: transparent;
+        }
+        .ant-menu-item-selected::before {
+            content: '';
+            position: absolute;
+            top: 39px;
+            background: white;
+            width: 7px;
+            height: 7px;
+            border-radius: 100%;
+            left: calc(50% - 5px);
+        }
+    }
+    .ant-menu.ant-menu-dark.ant-menu-horizontal {
+        .ant-menu-item:hover {
+            background: transparent;
+        }
+    }
+}
